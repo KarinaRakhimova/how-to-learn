@@ -9,14 +9,12 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-.content {
-  margin-top: 100px;
-}
-
 /* header */
 
 .header {
   display: flex;
+  justify-content:flex-start;
+  align-items: center;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
@@ -36,10 +34,8 @@
 }
 
 .header__title {
-  display: flex;
-  align-items: center;
   margin: 0 0 0 64px;
-  width: 730px;
+  max-width: 730px;
   line-height: 96px;
   font-size: 102px;
   font-weight: 600;
@@ -50,21 +46,24 @@
   position: absolute;
   left: 64px;
   bottom: 30px;
-  width: 388px;
+  max-width: 388px;
   margin: 0;
   line-height: 25px;
   font-size: 18px;
   z-index: 2;
+  font-weight: normal;
 }
 
 .header__link {
   text-decoration: none;
+  color: #2f80ed;
 }
 
 .header__main-illustration {
   position: absolute;
   width: 765px;
   height: 608px;
+  object-fit: cover;
   bottom: 0;
   right: 0;
   z-index: 1;
@@ -84,6 +83,7 @@
 .description {
   display: flex;
   justify-content: center;
+  padding-top: 100px;
 }
 
 .two-columns {
@@ -98,6 +98,7 @@
   width: 175px;
   font-size: 18px;
   color: #2f80ed;
+  font-weight: normal;
 }
 
 .two-columns__main-text {
@@ -105,8 +106,10 @@
   flex-direction: column;
   margin: 0;
   min-width: 784px;
+  width: 80%;
   line-height: 34px;
   font-size: 24px;
+  font-weight: normal;
   row-gap: 30px;
 }
 
@@ -125,7 +128,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-
+  padding: 100px 0;
 }
 
 .section-title {
@@ -139,9 +142,10 @@
 
 .section-subtitle {
   margin: 0;
+  width: 60%;
   line-height: 34px;
   font-size: 24px;
-  width: 60%;
+  font-weight: normal;
   text-align: center;
 }
 
@@ -153,13 +157,14 @@
   flex-wrap: wrap;
   align-items: flex-start;
   align-content: space-around;
+  padding-left: 0;
+  margin: 0;
 }
 
 .table__cell {
   width: 250px;
-  justify-content: space-between;
   margin-top: 60px;
-
+  list-style-type: none;
 }
 
 .table__heading {
@@ -173,14 +178,16 @@
   margin: 20px 0 0 0;
   line-height: 1.2;
   font-size: 18px;
+  font-weight: normal;
 }
 
 /* feynman */
 
 .feynman {
-  height: 890px;
+  min-height: 890px;
   background-color: #f2f2f2;
   background-image: url(../images/feynman.png);
+  background-size: 867px 637px;
   background-position: bottom left;
   background-repeat: no-repeat;
   display: flex;
@@ -190,8 +197,8 @@
 
 }
 .feynman__title {
-  width: 648px;
-  margin: 80px 0 70px 0;
+  max-width: 648px;
+  margin: 100px 0 70px 0;
   text-align: center;
   line-height: 1.15;
   font-size: 120px;
@@ -202,6 +209,7 @@
   margin: 0;
   line-height: 51px;
   font-size: 36px;
+  font-weight: normal;
 }
 .feynman__link {
   position: absolute;
@@ -210,7 +218,8 @@
   line-height: 51px;
   font-size: 36px;
   text-decoration: none;
-
+  color: #2f80ed;
+  font-weight: normal;
 }
 
 /* kaufman */
@@ -224,11 +233,16 @@
   justify-content: space-between;
   position: relative;
   overflow: hidden;
-  color: white;
+
 }
 
 .section-title_theme_dark {
+  color: white;
   z-index: 1;
+}
+
+.section-subtitle_theme_dark {
+  color: white;
 }
 
 .table_theme_dark {
@@ -237,8 +251,15 @@
 
 .table__cell_theme_dark {
   width: 200px;
-  margin-right: 0;
   margin-top: 80px;
+}
+
+.table__heading_theme_dark {
+  color: white;
+}
+
+.table__text_theme_dark {
+  color: white;
 }
 
 .kaufman__triangle {
@@ -261,21 +282,21 @@
   display: flex;
   justify-content: center;
   color: white;
+  padding-top: 60px;
+  padding-bottom: 40px;
 }
 
 .footer__columns {
   width: 90%;
   display: flex;
   justify-content: space-between;
-  margin-top: 60px;
-  margin-bottom: 40px;
  }
 
- .footer__column {
-  position: relative;
-}
  .footer__column_content_copyright {
   flex-basis: 711px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
  }
 
 .footer__column-heading {
@@ -289,14 +310,10 @@
 .footer__author {
   line-height: 25px;
   font-size: 18px;
-  position: absolute;
   left: 0;
   bottom: 0;
   margin: 18px 0;
-}
-
-.logo_place_footer {
-  background-image: url(/images/logo_place_footer.svg);
+  font-weight: normal;
 }
 
 .footer__column-links {
@@ -310,6 +327,7 @@
 
 .footer__column-link {
   text-decoration: none;
+  color: white;
 }
 
 .footer__social-icon {
