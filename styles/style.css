@@ -284,6 +284,7 @@
   color: white;
   padding-top: 60px;
   padding-bottom: 40px;
+  box-sizing: border-box;
 }
 
 .footer__columns {
