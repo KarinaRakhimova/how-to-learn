@@ -3,7 +3,7 @@
 "How to learn" is a one-page website dedicated to tips & advice about the process of learning.
 
 ## Description
-Website is built using main HTML & CSS technologies: flexbox, animation, iframes, etc.
+Website is built using main HTML & CSS technologies: flexbox, animation, iframes, BEM, Nested file system.
 
 ## Installation
 
