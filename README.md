@@ -8,8 +8,11 @@
   - Оформить файловую структуру проекта по правилам Nested БЭМ;
   - Опубликовать проект на GitHub.
 
-## Запуск проекта
+## Запуск проекта:
   Для запуска проекта необходимо клонировать репозиторий и открыть файл index.html в браузере или с помощью LiveServer.
 
-## Screenshot
+## Screenshot:
 ![Screenshot](https://github.com/KarinaRakhimova/how-to-learn/blob/main/Screenshot.png)
+
+## Ссылка на github-pages проекта:
+https://karinarakhimova.github.io/how-to-learn/
