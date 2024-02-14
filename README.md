@@ -1,10 +1,15 @@
-# How to learn
+# Научиться учиться
+Проект одностраничного сайта, посвященного разным подходам к обучению.
 
-"How to learn" is a one-page website dedicated to tips & advice about the process of learning.
+## Задачи проекта:
+    - На практике изучить основы семантической верстки;
+    - Освоить позиционирование и выравнивание элементов страницы при помощи Flexbox и Grid Layout;
+    - Закрепить навыки работы с анимациями, шрифтами и фреймами;
+    - Оформить файловую структуру проекта по правилам Nested БЭМ;
+    - Опубликовать проект на GitHub.
 
-## Description
-Website is built using main HTML & CSS technologies: flexbox, animation, iframes, etc.
+## Запуск проекта
 
-## Installation
+    Для запуска проекта еобходимо клонировать репозиторий и открыть файл index.html в браузере или с помощью LiveServer.
 
-Clone repository, open file index.html with your favourite brouser, Google Chrome, Firefox or Yandex brouser are prefferable.
+## Screenshot
